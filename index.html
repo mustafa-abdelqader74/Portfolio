@@ -15,14 +15,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,200&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <title>Mustafa Alqadi</title>
+        <title>Mustafa Abdelqader</title>
 </head>
 <body>
     <!-- start header -->
-    <div class="header">
+    <div class="header" class="sticky">
         <div class="container sticky">
             <div class="logo">
-                Alqadi
+                Mustafa Abdelqader
             </div>
             <ul class="main-nav">
                 <li><a href="#projects">Projects</a></li>
@@ -40,16 +40,16 @@
             <div class="text">
                 <h1>Welcome, To My World</h1>
                 <p>
-                    I'm <span>Mustafa Alqadi</span> 
-                    A Front End Developer
+                    I'm <span>Mustafa Abdelqader</span> 
+                    A UX Designer
                 </p>
                 <button>
-                    <a href="https://drive.google.com/file/d/1zIgBQ-P5Jee9we1miYdC70MiS6wvAaBS/view?usp=sharing">Download My Cv </a>
+                    <!-- <a href="https://drive.google.com/file/d/1zIgBQ-P5Jee9we1miYdC70MiS6wvAaBS/view?usp=sharing">Download My Cv </a> -->
                 </button>
             </div>
             <img src="imgs/landing-image.png" alt="">
             <div class="go-down">
-                <a href="#">
+                <a href="#projects">
                     <i class="fa-solid fa-angles-down"></i>
                 </a>
             </div>
@@ -67,7 +67,6 @@
                 <span>
                     <h3>Leon Template</h3>
                     <a href="">About</a>
-                    <a href="https://github.com/MustafaAlqadi97/Leon-Template-One">Code</a>
                     <a href="https://mustafaalqadi97.github.io/Leon-Template-One/index-dark.html">View</a>
                 </span>
             </div>
@@ -76,7 +75,6 @@
                 <span>
                     <h3>Kasper Template</h3>
                     <a href="">About</a>
-                    <a href="https://github.com/MustafaAlqadi97/Kasper-HTML-And-CSS-Template-Two">Code</a>
                     <a href="https://mustafaalqadi97.github.io/Kasper-HTML-And-CSS-Template-Two/">View</a>
                 </span>
             </div>
@@ -84,41 +82,50 @@
     </div>
     <!-- End Projects -->
     <!-- Start Skills -->
-    <div class="skills" id="skills">
+    <section id="skills">
         <div class="container">
-            <div class="special-heading">
-                <h2>Skills</h2>
-            </div>
+          <div class="content">
+            <h2>Skills</h2>
             <div class="card">
-                <i class="fa-brands fa-html5"></i>
-                <h3>Html</h3>
+              <div class="text">
+                <h3>UX Design</h3>
+                <ul>
+                  <li><strong>User Research:</strong> Interviews, Surveys, User Personas, User Journey Mapping</li>
+                  <li><strong>Wireframing & Prototyping:</strong> Low-Fidelity Wireframes, High-Fidelity Prototypes, Interactive Prototypes</li>
+                  <li><strong>Usability Testing:</strong> Moderated/Unmoderated Testing, A/B Testing, Heuristic Evaluation, Usability Metrics Analysis</li>
+                  <li><strong>Information Architecture:</strong> Site Maps, Card Sorting, Navigation Design</li>
+                </ul>
+              </div>
             </div>
+      
             <div class="card">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>CSS</h3>
+              <div class="text">
+                <h3>UI Design</h3>
+                <ul>
+                  <li><strong>Visual Design:</strong> Typography, Color Theory, Layout Design, Iconography</li>
+                  <li><strong>Design Tools:</strong> Figma, Adobe Creative Suite</li>
+                  <li><strong>Interaction Design:</strong> Microinteractions, Animation, Motion Design</li>
+                  <li><strong>Design Systems & Guidelines:</strong> Creating Design Systems, Adhering to Brand Guidelines, Accessibility Standards (WCAG)</li>
+                </ul>
+              </div>
             </div>
+    
+      
             <div class="card">
-                <i class="fa-brands fa-square-js"></i>
-                <h3>Javascript</h3>
+              <div class="text">
+                <h3>Soft Skills</h3>
+                <ul>
+                  <li><strong>Communication:</strong> Presenting Designs, Writing Design Specifications, Team Collaboration</li>
+                  <li><strong>Problem-Solving:</strong> Analytical Thinking, Creativity, Critical Thinking</li>
+                  <li><strong>Empathy:</strong> Understanding User Needs, Designing for Inclusivity</li>
+                </ul>
+              </div>
             </div>
-            <div class="card">
-                <i class="fa-brands fa-bootstrap"></i>
-                <h3>Bootstrap</h3>
-            </div>
-            <div class="card">
-                <i class="fa-brands fa-react"></i>
-                <h3>React JS</h3>
-            </div>
-            <div class="card">
-                <i class="fa-brands fa-node"></i>
-                <h3>Node js</h3>
-            </div>
-            <div class="card">
-                <i class="fa-brands fa-git"></i>
-                <h3>Git/Github</h3>
-            </div>
+          </div>
         </div>
-    </div>
+      </section>
+      
+      
     <!-- End Skills -->
     <!-- Start Services -->
     <div class="services" id="services">
@@ -130,33 +137,31 @@
                 <img src="imgs/work-steps.png" alt="">
             </div>
             <div class="content">
-                <div class="card">
-                    <img src="imgs/work-steps-1.png" alt="">
-                    <div class="text">
-                        <h3>Responsive Web Design</h3>
-                        <p>
-                            Build professional responsive websites mobile by
-                            tallented designer with experience in user friendly interfaces.
-                        </p>
-                    </div>
-                </div>
+
                 <div class="card">
                     <img src="imgs/work-steps-2.png" alt="">
                     <div class="text">
-                        <h3>Web Design</h3>
+                        <h3>User Experience Design</h3>
                         <p>
-                            Web Design and Web Development services,
-                            to deliver complete software solution using Web applications.
+                            Crafting user-centric designs through research and testing to ensure intuitive and seamless user experiences.
                         </p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="imgs/work-steps-3.png" alt="">
                     <div class="text">
-                        <h3>Web Development</h3>
+                        <h3>User Interface Design</h3>
                         <p>
-                            Web Design and Web Development services,
-                            to deliver complete software solution using Web applications.
+                            Designing visually appealing interfaces that align with brand identity and enhance user interactions.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="imgs/work-steps-1.png" alt="">
+                    <div class="text">
+                        <h3>Prototyping and Wireframing</h3>
+                        <p>
+                            Creating interactive prototypes and wireframes to visualize and iterate design concepts effectively.
                         </p>
                     </div>
                 </div>
@@ -175,28 +180,10 @@
             </div>
             <div class="content">
                 <div class="card">
-                    <a href="https://www.facebook.com/MustafaAlqadi97">
-                        <i class="fa-brands fa-square-facebook"></i>
+                    <a href="https://www.behance.net/mustafaalqadi97">
+                        <i class="fa-brands fa-behance"></i>
                     </a>
-                    <h3>Facebook</h3>
-                </div>
-                <div class="card">
-                    <a href="https://github.com/MustafaAlqadi97">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <h3>Github</h3>
-                </div>
-                <div class="card">
-                    <a href="https://codepen.io/mustafaalqadi97">
-                        <i class="fa-brands fa-codepen"></i>
-                    </a>
-                    <h3>Codepen</h3>
-                </div>
-                <div class="card">
-                    <a href="mailto:mustafaalqadi74@gmail.com">
-                        <i class="fa-regular fa-envelope"></i>
-                    </a>
-                    <h3>Gmail</h3>
+                    <h3>Behance</h3>
                 </div>
                 <div class="card">
                     <a href="https://www.linkedin.com/in/mustafa-alqadi">
@@ -204,6 +191,27 @@
                     </a>
                     <h3>LinkedIn</h3>
                 </div>
+                <div class="card">
+                    <a href="mailto:mustafaalqadi74@gmail.com">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <h3>Gmail</h3>
+                </div>
+               
+                <div class="card">
+                    <a href="https://www.facebook.com/MustafaAlqadi97">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <h3>Facebook</h3>
+                </div>
+                <div class="card">
+                    <a href="https://www.instagram.com/mustafaalqadi97/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <h3>Instagram</h3>
+                </div>
+                
+
                 <div class="card">
                     <a href="https://wa.me/201096476496">
                         <i class="fa-solid fa-mobile"></i>
