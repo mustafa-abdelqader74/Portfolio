@@ -12,7 +12,7 @@ html{
 }
 body{
     font-family: 'Cairo', sans-serif;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 ul{
     list-style: none;
@@ -102,6 +102,13 @@ ul{
 .header {
     background-color: #FFFFFF;
 }
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
 
 .header .container{
     display: flex;
@@ -194,7 +201,9 @@ ul{
 /* Start landing */
 
 .landing {
-    background-color: #ececec;
+    /* background-color: #ececec; */
+    background-image:url(imgs/1.jpg);
+
 }
 .landing .container{
     height: 91vh;
@@ -353,45 +362,71 @@ ul{
 }
 /* End Projects */
 /* Start Skills */
-.skills{
-    background-color: #ececec;
-}
-.skills .container{
+/* Start skills */
+#skills .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 100px 0;
-}
-.skills .container .card{
-    flex-basis: 30%;
-    padding: 20px;
-    text-align: center;
-}
-.skills .container .card:hover{
-    transform: translateY(-10px);
-    transition: 0.5s;
-}
-.skills .container .card i{
-    font-size: 90px;
-    color: #2196f3;
-}
-.skills .container .card i:hover{
-    color: black;
-    transition: 0.5s;
-}
-@media (max-width:768px) {
-    .skills .container .card{
-        flex-basis: 50%;
+    position: relative;
+  }
+  
+  #skills .container .content {
+    flex-basis: 100%;
+  }
+  
+  #skills .container .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 30px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+  }
+  
+  #skills .container .card .text {
+    flex-basis: 100%;
+  }
+  
+  #skills .container .card h3 {
+    margin: 20px 0 0 0;
+  }
+  
+  #skills .container .card ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #skills .container .card ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  #skills .container .card ul li strong {
+    color: #0073e6;
+  }
+  
+  @media (max-width: 1100px) {
+    #skills .container .image {
+      display: none;
     }
-    .skills .container .card i{
-        font-size: 45px;
+  
+    #skills .container .card img {
+      display: none;
     }
-    .skills .container .card h3{
-        font-size: 15px;
+  
+    #skills .container .content {
+      flex-basis: 100%;
     }
-    
-}
+  
+    #skills .container .card .text {
+      flex-basis: 100%;
+    }
+  }
+  /* End skills */
+  
 /* End Skills */
 
 /* Start services */
@@ -416,7 +451,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(231, 231, 231);
+    background-color: #F5F5F5;
     padding: 30px;
     margin-bottom: 10px;
     border: 2px solid white;
@@ -450,7 +485,7 @@ ul{
 
 /* Start Contact Me  */
 .contact-me{
-    background-color: #ececec;
+    background-color: #ffff;
 }
 .contact-me .container{
     display: flex;
