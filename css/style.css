@@ -421,7 +421,7 @@ ul{
     flex-wrap: wrap;
 }
 .projects .container .card {
-    flex-basis: 45%;
+    flex-basis: 25%;
     display: flex;
     position: relative;
     border-radius: 3%;
@@ -440,6 +440,7 @@ ul{
 }
 .projects .container .card img{
     width: 100%;
+    height: 50%;
 }
 .projects .container .card span{
     /* display: none; */
@@ -467,7 +468,7 @@ ul{
     margin-bottom: 0;
     text-align: center;
     width: 100%;
-    font-size: 30px;
+    font-size: 25px;
     color: #FFFFFF;
 }
 .projects .container .card span a{
@@ -602,39 +603,56 @@ ul{
 
 /* Start Contact Me  */
 .contact-me{
-    background-color: #ffff;
+    /* background-color: #ffff; */
 }
 .contact-me .container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items at the top */
     flex-wrap: wrap;
     height: fit-content;
-    padding: 5%;
+    padding: 0%;
+    flex-direction: row;
 }
 .contact-me .container .image{
-    flex-basis: 20%;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 10px 10px 10px rgb(163, 163, 163);
+    flex-basis: 20%; /* Adjust width to fit your needs */
     transition: 0.3s;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px; /* Space between the first and second divs */
+    text-align: center; /* Center text below the image */
+    /* background-color: #0073e6; */
+    padding-top: 50px;
+
+}
+.contact-me .container .image div{
+    text-align: center;
+    margin-top: 10px; /* Space between image and text */
+    font-weight: 700;
+    font-size: 25px;
 }
 .contact-me .container .image:hover{
     transition: 0.5s;
     transform: scale(1.02);
 }
 .contact-me .container .image img{
-    width: 100%;
-    height: 100%;
+    width: 350px; /* Adjust width to fit your needs */
+    height: 350px; /* Set equal height for circular shape */
+    border-radius: 50%; /* For circular image */
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 .contact-me .container .content{
-    flex-basis: 100%;
-    display: flex;
+    flex-basis: 1%; /* Adjust width to fit your needs */
     justify-content: center;
     flex-wrap: wrap;
+    padding:  5%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 5% 0;
+    /* background-color: #0073e6; */
 }
 .contact-me .container .card{
     flex-basis: 30%;
